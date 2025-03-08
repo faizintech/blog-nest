@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #444;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+nav ul li {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+nav li.active {
+  background: #555;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.main-content {
+  height: 400px;
+  flex: 3;
+  padding: 20px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.sidebar {
+  flex: 1;
+  background: #eee;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.post {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.create-post {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#PostTitle {
+  width: 100%;
+  outline: none;
+  font-size: 2rem;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-left: 10px; */
+}
+
+.btn:hover {
+  background: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+.blog-post {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.post-title {
+  margin: 0 0 10px;
+}
+
+.post-content {
+  margin: 0 0 20px;
+}
+
+.like-comment-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.like-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background-color: #0056b3;
+}
+
+.like-count {
+  margin-left: 10px;
+}
+
+.comments-section {
+  margin-top: 20px;
+}
+
+.comment-list {
+  /* margin-bottom: 20px; */
+  max-height: 100px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.comment-input {
+  display: flex;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-input button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.comment-input button:hover {
+  background-color: #218838;
+}
+
+.searchBar {
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid #218838;
+  border-radius: 10px;
+}
+.searchBar input {
+  font-size: 20px;
+  width: 99%;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  padding: 5px;
+}
