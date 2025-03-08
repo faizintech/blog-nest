@@ -5,7 +5,7 @@ const SearchBar = () => {
   const { seachOutput, query } = useContext(Context);
   return (
     <div className="searchBar">
-      <input type="text" placeholder="search here by title and conten" value={query} onChange={(e) => seachOutput(e)} />
+      <input type="text" placeholder="search here by title and content" value={query} onChange={(e) => seachOutput(e)} />
     </div>
   );
 };
