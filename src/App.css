@@ -112,9 +112,7 @@ footer {
   padding: 10px;
   background: #333;
   color: #fff;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
+
 }
 
 .blog-post {
